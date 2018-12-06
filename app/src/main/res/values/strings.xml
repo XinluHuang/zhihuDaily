@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">知乎日报Fake</string>
+    <string name="share">分享</string>
+    <string name="star">收藏</string>
+    <string name="comment">评论</string>
+    <string name="thumb">赞</string>
+    <string name="main_title">首页</string>
+    <string name="message">消息</string>
+    <string name="daynight">夜间模式</string>
+    <string name="setting">设置选项</string>
+    <string name="daily">今日新闻</string>
+</resources>

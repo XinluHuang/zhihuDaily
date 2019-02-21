@@ -1,4 +1,4 @@
-package com.xinluhuang.zhihudaily.module;
+package com.xinluhuang.mylibrary;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;

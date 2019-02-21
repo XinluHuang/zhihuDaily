@@ -11,9 +11,9 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.xinluhuang.mylibrary.app.MyApplication;
 import com.xinluhuang.zhihudaily.util.Constants;
 import com.xinluhuang.zhihudaily.R;
-import com.xinluhuang.zhihudaily.app.ZHApplication;
 import com.xinluhuang.zhihudaily.retrofit.bean.NewsContentBean;
 import com.xinluhuang.zhihudaily.retrofit.RetrofitHelper;
 import com.xinluhuang.zhihudaily.retrofit.bean.NewsExtraBean;
@@ -61,7 +61,7 @@ public class NewsContentActivity extends AppCompatActivity {
 
                     @Override
                     public void onError(Throwable e) {
-                        Toast.makeText(ZHApplication.getContext(), "加载网页失败", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MyApplication.getInstance(), "加载网页失败", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
@@ -148,7 +148,7 @@ public class NewsContentActivity extends AppCompatActivity {
 
                     @Override
                     public void onError(Throwable e) {
-                        Toast.makeText(ZHApplication.getContext(), "加载评论失败", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MyApplication.getInstance(), "加载评论失败", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override

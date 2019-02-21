@@ -11,11 +11,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.xinluhuang.mylibrary.util.DateUtil;
+import com.xinluhuang.mylibrary.util.LogUtil;
 import com.xinluhuang.zhihudaily.util.Constants;
 import com.xinluhuang.zhihudaily.retrofit.bean.LatestBean;
 import com.xinluhuang.zhihudaily.R;
-import com.xinluhuang.zhihudaily.util.DateUtil;
-import com.xinluhuang.zhihudaily.util.LogUtil;
 import com.xinluhuang.zhihudaily.widget.Banner;
 import com.xinluhuang.zhihudaily.widget.ZHBanner;
 

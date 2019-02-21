@@ -1,4 +1,4 @@
-package com.xinluhuang.zhihudaily.util;
+package com.xinluhuang.mylibrary.util;
 
 import android.util.Log;
 

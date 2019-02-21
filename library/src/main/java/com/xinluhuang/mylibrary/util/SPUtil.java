@@ -1,9 +1,10 @@
-package com.xinluhuang.zhihudaily.util;
+package com.xinluhuang.mylibrary.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.xinluhuang.zhihudaily.app.ZHApplication;
+import com.xinluhuang.mylibrary.app.MyApplication;
+
 
 public class SPUtil {
     private static final String FILE_NAME = "share_data";
@@ -13,7 +14,7 @@ public class SPUtil {
     }
 
     public static Object get(String key, Object defaultObject) {
-        SharedPreferences sharedPreferences=ZHApplication.getContext().getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences= MyApplication.getInstance().getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
         if (defaultObject instanceof Boolean) {
             return sharedPreferences.getBoolean(key, (Boolean) defaultObject);
         } else if (defaultObject instanceof String) {
@@ -21,11 +22,12 @@ public class SPUtil {
         } else if (defaultObject instanceof Integer) {
             return sharedPreferences.getInt(key, (Integer) defaultObject);
         }
+
         return null;
     }
 
     public static void put(String key, Object object) {
-        SharedPreferences.Editor editor = ZHApplication.getContext().getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).edit();
+        SharedPreferences.Editor editor = MyApplication.getInstance().getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE).edit();
         if (object instanceof Boolean) {
             editor.putBoolean(key, (Boolean) object);
         } else if (object instanceof String) {
@@ -37,7 +39,7 @@ public class SPUtil {
     }
 
     public static void remove(String key) {
-        SharedPreferences sharedPreferences=ZHApplication.getContext().getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences=MyApplication.getInstance().getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.remove(key);
         editor.commit();

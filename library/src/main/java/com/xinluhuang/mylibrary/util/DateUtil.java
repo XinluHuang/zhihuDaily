@@ -1,4 +1,4 @@
-package com.xinluhuang.zhihudaily.util;
+package com.xinluhuang.mylibrary.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
